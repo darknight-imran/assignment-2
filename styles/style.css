@@ -1,0 +1,297 @@
+.max-width {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: tomato;
+    border: 0;
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section-top {
+    margin-top: 100px;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 40px;
+    color: tomato;
+}
+
+.nav-element {
+    border: 2px solid rgb(75, 67, 67);
+    border-radius: 30px;
+    padding: 2px 20px 2px 2px;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-element>li {
+    list-style: none;
+
+
+}
+
+.nav-element>li>button,
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* banner related style */
+.stay-health {
+    width: 100%;
+}
+
+.stay-health img {
+    margin-left: 200px;
+}
+
+.tutorial-title {
+    margin: 10px -15px 0 0;
+    font-weight: bold;
+}
+
+.tutorial-drescription {
+    margin: 0 0 15px 0;
+}
+
+.video-tutorial,
+.video-tutorial-second {
+    border-radius: 8px;
+    padding: 0 35px;
+    position: absolute;
+    background-color: rgba(42, 45, 45, 0.338);
+    margin-top: -150px;
+    margin-left: 150px;
+}
+
+.video-tutorial-second {
+    margin-top: -430px;
+    margin-left: 440px;
+
+}
+
+/* change Your Habit related style */
+.change-habit-container {
+    margin-top: 70px;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 40px;
+    text-align: center;
+}
+
+.habit-details {
+    padding: 0 400px;
+}
+
+.change-habit-item img {
+    border-radius: 100%;
+}
+
+/* Run an Extra related style */
+.run-extra-container {
+    align-items: start;
+    background-color: rgb(61, 60, 60);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.run-extra-image {
+    text-align: end;
+}
+
+.run-extra-image img {
+    border-radius: 10px;
+}
+
+/* Training and Exercises related style */
+.exercise-images-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.exercise-drescription {
+    position: relative;
+    margin-top: -150px;
+    color: rgb(174, 159, 139);
+    padding: 20px;
+
+
+}
+
+.exercise-img img {
+    width: 100%;
+    height: 100%;
+}
+/* BMI Calculator related styles*/
+.bmi-clculator{
+    background-color: rgba(68, 70, 70, 0.454);
+    padding: 50px 10px;
+}
+
+.bmi-calculator-containers{
+    align-items: start;
+    margin-top: 50px;
+    
+}
+.bmi-table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid rgb(72, 72, 71);
+    padding: 5px 20px;
+}
+/* Meet Our Team */
+.our-team-details {
+    padding: 0 550px;
+}
+
+.our-team-containers {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(133, 130, 130);
+    padding: 18px;
+    gap: 18px;
+    border-radius: 10px;
+}
+
+.our-team-image img {
+    height: 98%;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.triner-name,
+.triner-drescription {
+    color: rgb(211, 189, 231);
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -80px;
+}
+
+.triner-drescription {
+    margin-top: -50px;
+}
+
+/* footer related styles */
+footer {
+    background-color: rgb(46, 49, 49);
+    padding: 30px 0px;
+}
+
+.footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+}
+
+.footer-fitness {
+    width: 450px;
+}
+
+.footer-item {
+    list-style: none;
+}
+.started-container{
+    justify-content: space-around;
+}
+.hr-border {
+    margin-top: 50px;
+    border-color: rgba(123, 128, 128, 0.678);
+}
+
+.footer-text {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/* responsive style */
+@media screen and (max-width:576px) {
+    .nav-element {
+        display: none;
+    }
+
+    .banner,
+    .run-extra-container,
+    .started-container,
+    .bmi-calculator-containers {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stay-health {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .stay-health img {
+        width: 60%;
+        margin-left: 0px;
+
+    }
+
+
+    .video-tutorial {
+        margin-top: -130px;
+        margin-left: 60px;
+    }
+
+    .video-tutorial-second {
+        margin-top: -300px;
+        margin-left: 200px;
+    }
+
+
+
+    .habit-details,
+    .our-team-details {
+        padding: 0 0px;
+    }
+
+    .display-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run-extra-detail,
+    .bmi-clculator{
+        text-align: center;
+    }
+
+    .run-extra-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .run-extra-image img {
+        width: 100%;
+    }
+
+    .footer-fitness {
+        width: 100%;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}

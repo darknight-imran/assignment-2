@@ -120,7 +120,6 @@ a {
 /* banner related style */
 .stay-health {
     width: 100%;
-
 }
 
 .stay-health img {
@@ -133,17 +132,31 @@ a {
     font-size: 2.5rem;
     font-weight: 900;
 }
-.video-tutorial-title{
+
+.video-tutorial {
+    justify-content: space-evenly;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+
+.video-tutorial-title {
     font-size: 1.8rem;
     font-weight: 900;
     margin: 10px -15px 0 0;
 }
+
 .tutorial-drescription {
     margin: 0 0 15px 0;
     font-size: .80rem;
     padding: 0;
-    
+
 }
+
 .video-tutorial,
 .video-tutorial-second {
     width: 130px;
@@ -162,11 +175,12 @@ a {
 }
 
 /* change Your Habit related style */
-.section-title{
+.section-title {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
 }
+
 .change-habit-container {
     margin-top: 70px;
 }
@@ -181,7 +195,8 @@ a {
 .habit-details {
     padding: 0 300px;
 }
-.habit-drescription{
+
+.habit-drescription {
     padding: 0;
     margin-top: 0;
 }
@@ -190,14 +205,16 @@ a {
     border-radius: 100%;
 }
 
-.movement-title{
+.movement-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 6px;
 }
-.movement-drescription{
+
+.movement-drescription {
     padding: 0;
 }
+
 /* Run an Extra related style */
 .run-extra-container {
     align-items: start;
@@ -213,9 +230,11 @@ a {
 .run-extra-image img {
     border-radius: 10px;
 }
-.run-drescription{
+
+.run-drescription {
     margin-bottom: 0;
 }
+
 /* Training and Exercises related style */
 .exercise-images-container {
     grid-template-columns: repeat(3, 1fr);
@@ -224,8 +243,9 @@ a {
 
 .exercise-drescription {
     position: relative;
+    font-size: 1rem;
     margin-top: -150px;
-    color: rgb(239, 237, 235);
+    color: rgba(255, 255, 255, 0.5);
     padding: 20px;
 
 
@@ -234,16 +254,21 @@ a {
 .exercise-img img {
     width: 100%;
     height: 100%;
+    filter: opacity(60%);
+
+
 }
 
 /* BMI Calculator related styles*/
 .bmi-clculator {
     background-color: rgba(68, 70, 70, 0.454);
-    padding: 50px 10px;
+    padding: 50px 10px 100px;
 }
-.calculator-drescription{
-    padding:0 ;
+
+.calculator-drescription {
+    padding: 0;
 }
+
 .bmi-calculator-containers {
     align-items: start;
     margin-top: 50px;
@@ -273,17 +298,22 @@ select {
     background-color: rgba(68, 70, 70, 0.454);
     color: rgba(255, 255, 255, 0.6);
 }
+
 /* Meet Our Team */
 .our-team-details {
-    padding: 0 550px;
+    padding: 0 300px;
 }
 
 .our-team-containers {
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(133, 130, 130);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 18px;
     gap: 18px;
     border-radius: 10px;
+}
+
+.team-drescription {
+    padding: 0;
 }
 
 .our-team-image img {
@@ -300,7 +330,15 @@ select {
     margin-top: -80px;
 }
 
+.triner-name {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
 .triner-drescription {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
     margin-top: -50px;
 }
 
@@ -321,8 +359,26 @@ footer {
     width: 450px;
 }
 
+.footer-title {
+    font-size: 4.37rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.started-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .footer-item {
     list-style: none;
+    margin-bottom: 10px;
+
+}
+
+.footer-item>a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
 }
 
 .started-container {
@@ -331,16 +387,22 @@ footer {
 
 .hr-border {
     margin-top: 50px;
-    border-color: rgba(123, 128, 128, 0.678);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-text {
     margin-top: 25px;
     margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
 }
-.footer-drescription{
+
+.footer-drescription {
     padding: 0;
+    margin-top: 0;
 }
+
 /* responsive style */
 @media screen and (max-width:576px) {
     .nav-element {

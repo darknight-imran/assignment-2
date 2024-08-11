@@ -12,7 +12,7 @@
     font-family: "Sevillana", cursive;
     font-weight: 900;
     font-style: normal;
-    font-size: 78px;
+    font-size: 5rem;
 }
 
 body {
@@ -20,13 +20,15 @@ body {
     color: #FFFFFF;
     background-color: black;
 }
-
+#fa-bars{
+    display: none;
+}
 .header-bg {
     background-color: rgba(17, 17, 17, 1);
 }
 
 .max-width {
-    max-width: 1250px;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -164,13 +166,13 @@ a {
     padding: 0 20px;
     position: absolute;
     background-color: rgba(42, 45, 45, 0.338);
-    margin-top: -170px;
-    margin-left: 150px;
+    margin-top: -230px;
+    margin-left: 200px;
 }
 
 .video-tutorial-second {
-    margin-top: -520px;
-    margin-left: 500px;
+    margin-top: -680px;
+    margin-left: 580px;
 
 }
 
@@ -405,8 +407,39 @@ footer {
 
 /* responsive style */
 @media screen and (max-width:576px) {
+    #fa-bars{
+        display: block;
+    }
+    .section-top {
+        margin-top: 50px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+    .sevillana-regular{
+        font-size: 2.50rem;
+    }
+    
+
+    .btn-primary {
+        padding: 12px 30px;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
     .nav-element {
         display: none;
+    }
+
+    .banner-title {
+        font-size: 2.25rem;
+        text-align: start;
+    }
+
+    #banar-sub-title {
+        text-align: start;
+        padding-right: 0;
     }
 
     .banner,
@@ -425,7 +458,6 @@ footer {
     .stay-health img {
         width: 60%;
         margin-left: 0px;
-
     }
 
 
@@ -455,6 +487,15 @@ footer {
         text-align: center;
     }
 
+    .run-drescription {
+        padding-right: 0;
+    }
+
+    #trading-sub-title,
+    #chart-sub-title {
+        padding-right: 0;
+    }
+
     .run-extra-image {
         margin-top: 30px;
         text-align: center;
@@ -464,6 +505,96 @@ footer {
         width: 100%;
     }
 
+    .footer-fitness {
+        width: 100%;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .section-top {
+        margin-top: 50px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .banner-title {
+        text-align: start;
+    }
+
+    #banar-sub-title {
+        text-align: start;
+        padding-right: 0;
+    }
+
+    .banner,
+    .started-container,
+    .bmi-calculator-containers {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stay-health {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .stay-health img {
+        width: 60%;
+        margin-left: 0px;
+    }
+
+
+    .video-tutorial {
+        margin-top: -130px;
+        margin-left: 60px;
+    }
+
+    .video-tutorial-second {
+        margin-top: -300px;
+        margin-left: 200px;
+    }
+
+
+
+    .habit-details,
+    .our-team-details {
+        padding: 0 0px;
+    }
+
+    .display-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bmi-clculator {
+        text-align: center;
+    }
+
+    .run-drescription {
+        padding-right: 0;
+    }
+
+    #trading-sub-title,
+    #chart-sub-title {
+        padding-right: 0;
+    }
+
+    .run-extra-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .run-extra-image img {
+        width: 100%;
+    }
+.chart-title{
+    margin-top: 50px;
+}
     .footer-fitness {
         width: 100%;
     }
